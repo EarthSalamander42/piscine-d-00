@@ -1,1 +1,1 @@
-find . -name \* | wc -l
+find . | wc -l | sed 's/^ *//g'
