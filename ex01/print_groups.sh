@@ -1,1 +1,1 @@
-export FT_USER=$USER | groups  | tr ' ' ',' | sed 's/$//g'
+groups $FT_USER | tr ' ' ',' | tr -d '\n' | cat -e
